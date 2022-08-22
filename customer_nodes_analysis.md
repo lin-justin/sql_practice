@@ -1,6 +1,6 @@
 # Customer Nodes
 
-1. How many unique nodes are there?
+## 1. How many unique nodes are there?
 
 ```sql
 SELECT
@@ -15,7 +15,7 @@ Result:
 |:---:|
 |5    |
 
-2. What is the number of nodes per region?
+## 2. What is the number of nodes per region?
 
 - Inner join the customer_nodes table with the regions table
 - Count node_id and group by region_name
@@ -44,7 +44,7 @@ Result:
 |Asia       |665    |
 |Europe     |616    |
 
-3. How many customers are allocated to each region?
+## 3. How many customers are allocated to each region?
 
 - Inner join the customer_nodes table with the regions table
 - Count customer_id and group by region_name
@@ -73,7 +73,7 @@ Result:
 |Asia       |665        |
 |Europe     |616        |
 
-4. How many days on average are customers reallocated to a different node?
+## 4. How many days on average are customers reallocated to a different node?
 
 - Create a CTE that calculates the date difference between the end_date and start_date (check date ranges)
 - Create another CTE to sum the date difference
