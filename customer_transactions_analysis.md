@@ -23,7 +23,7 @@ Result:
 
 ## 2. What is the average total historical deposit counts and amounts for all customers?
 
--- Create a CTE to calculate the transaction count and average historical deposit amount for each customer and then filter `txn_type` to `deposit`
+- Create a CTE to calculate the transaction count and average historical deposit amount for each customer and then filter `txn_type` to `deposit`
 
 ```sql
 WITH deposit_cte AS 
